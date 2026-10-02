@@ -1,0 +1,68 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  padding: 50px;
+  background-color: #ff7272;
+  font-family: monospace;
+}
+
+@media (max-width: 750px) {
+  body {
+    background-color: black;
+    color:  white;
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-height: 650px) {
+  body {
+    background-color: orange;
+  }
+}
+
+body {
+  font-size: 16px;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  body {
+    font-size: 40px;
+    background-color: black;
+    color: white;
+
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 992px) {
+  body {
+    font-size: 50px;
+  }
+}
+
+/* Wide screen breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 60px;
+  }
+}
+
+
+img {
+  max-width: 200%;
+  height: auto;
+}
