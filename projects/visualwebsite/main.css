@@ -1,0 +1,92 @@
+
+body {
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.strip{
+  flex:1;
+  height: 100%;
+   min-width: 0;
+  transition: flex 0.5s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.strip:hover {
+  flex: 3;
+}
+
+
+.strip1 {
+  background: linear-gradient(to bottom,
+    #C6030A 0%, #0432F1 50%, #DED3BF 100%);
+}
+
+.strip2 {
+  background: linear-gradient(to bottom,
+    #F65E78 0%, #FC0C11 50%, #F2B131 100%);
+}
+
+.strip3 {
+  background: linear-gradient(to bottom,
+    #F9767F 0%, #FAC5AE 50%, #4AD3CE 100%);
+}
+
+.strip4 {
+  background: linear-gradient(to bottom,
+    #E3F0EB 0%, #518AA5 50%, #D65C8C 100%);
+}
+
+.strip5 {
+  background: linear-gradient(to bottom,
+    #FCF4E6 0%, #E4778D 50%, #667C98 100%);
+}
+
+.strip6 {
+  background: linear-gradient(to bottom,
+    #DE6CBB 0%, #CBB827 50%, #653114 100%);
+}
+
+.strip7 {
+  background: linear-gradient(to bottom,
+    rgb(105 60 2 / 99%) 0%, #E988AA 54%, #FF6F00 100%);
+}
+
+.strip8 {
+  background: linear-gradient(to bottom,
+    #77EFFF 0%, #F762F4 100%);
+}
+
+.icecream{
+  width: 100px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.strip:hover .icecream {
+  opacity: 1;
+  width:70% ;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .strip {
+    min-height: 120px;
+  }
+
+  .icecream {
+    opacity: 1;
+    width: 40px;
+  }
+}
