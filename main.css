@@ -61,3 +61,92 @@ a {
 .entry a:hover {
   background-color: #D9BEA3;
 }
+body {
+  margin: 0;
+  padding: 50px 20px;
+}
+
+.wrapper {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 30px;
+}
+
+h2 {
+  max-width: 500px;
+  margin: 25px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.entries {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 450px;
+  margin: 50px auto 0;
+}
+
+.entry {
+  width: 180px;
+}
+
+.entry a {
+  padding: 30px 10px;
+  color: #40382F;
+  background-color: #F6EDE3;
+  border: 2px solid #96785F;
+  border-radius: 12px;
+}
+
+.entry a:hover {
+  background-color: #D9BEA3;
+}body {
+  margin: 0;
+  padding: 50px 20px;
+}
+
+.wrapper {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 70px;
+  margin-top: 30px;
+}
+
+h2 {
+  max-width: 500px;
+  margin: 25px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.entries {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 450px;
+  margin: 50px auto 0;
+}
+
+.entry {
+  width: 180px;
+}
+
+.entry a {
+  padding: 30px 10px;
+  color: #40382F;
+  background-color: #F6EDE3;
+  border: 2px solid #96785F;
+  border-radius: 12px;
+}
+
+.entry a:hover {
+  background-color: #D9BEA3;
+}
