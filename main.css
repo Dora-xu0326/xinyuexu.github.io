@@ -125,6 +125,18 @@ h2 {
   content: "04 / NOTES";
 }
 
+.entry5 {
+  transform: rotate(-3deg);
+}
+
+.entry5 a {
+  background-color: #D5DDC5;
+}
+
+.entry5 a::before {
+  content: "05 / GRID";
+}
+
 .entry a:hover {
   background-color: #FFF5E9;
 }
@@ -144,7 +156,6 @@ h2 {
     max-width: 300px;
   }
 
-  
   .entry4 {
     margin-top: 0;
   }
