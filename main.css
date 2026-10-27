@@ -8,7 +8,7 @@ body {
   padding: 50px 40px;
   min-height: 100vh;
   background-color: #FFFCFD;
-background-image: radial-gradient(
+  background-image: radial-gradient(
   circle,
   #F3B6CA 2px,
   transparent 2.5px
