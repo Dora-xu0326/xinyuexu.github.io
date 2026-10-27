@@ -48,14 +48,17 @@ h1:hover {
   color: #796350;
 }
 
-.info p {
-  margin: 0 0 30px;
+
+.description {
+  margin-bottom: 30px;
 }
 
-.info p:nth-child(2) {
+.time {
+  margin-bottom: 30px;
   font-size: 12px;
   letter-spacing: 1px;
 }
+
 
 a {
   color: #765330;
