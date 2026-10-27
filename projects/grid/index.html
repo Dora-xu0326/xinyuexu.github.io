@@ -1,74 +1,54 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Structure Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body id="top">
+<body>
 
-  <div class="page-wrapper">
+  <header>
+    <h1>Core 1 Interaction: Lab</h1>
+    – <span>HTML Structure Analysis</span>
+  </header>
 
-    <header>
-      <div class="top-line">
-        <span>Core 1 Interaction: Lab</span>
-        <span>HTML Structure Analysis / 2026</span>
-      </div>
+  <section id="table-of-contents">
+    <div class="button">
+      <ul>
+        <li><a href="#screenshot">Screenshot ↓</a></li>
+        <li><a href="#analysis">Analysis ↓</a></li>
+        <li><a href="#questions">Questions ↓</a></li>
+        <li><a href="../regrid/index.html">My Grid Project ↗</a></li>
+        <li>
+          <a href="https://www.itsnicethat.com/" target="_blank" rel="noopener noreferrer">
+            Link to the original website
+          </a>
+        </li>
+      </ul>
+    </div>
+    <hr>
+  </section>
 
-      <h1>HTML Structure<br><em>Analysis.</em></h1>
+  <section id="screenshot">
+    <h2>Screenshot</h2>
+    <img src="img/inspect.png" alt="It's Nice That website with browser inspector open">
+  </section>
 
-      <p class="subtitle">A structural study of It's Nice That</p>
+  <hr>
 
-      <div class="website-links">
-        <a href="https://www.itsnicethat.com/"target="_blank">
-          <span>Original Website</span>
-          <span>It's Nice That ↗</span>
-        </a>
+  <section id="analysis">
+    <h2>Analysis</h2>
 
-       
-        <a href="../regrid/index.html" target="_blank">
-          <span>My Grid Recreation</span>
-          <span>View My Project ↗</span>
-        </a>
+    <div class="grid-col-2">
 
-         
-      </div>
-    </header>
-
-    <nav id="table-of-contents">
-      <a href="#screenshot">01 / Screenshot</a>
-      <a href="#analysis">02 / Analysis</a>
-      <a href="#questions">03 / Questions</a>
-    </nav>
-
-    <section id="screenshot">
-      <div class="section-heading">
-        <span>01</span>
-        <h2>Screenshot</h2>
-      </div>
-
-      <img src="img/inspect.png" alt="It's Nice That website with Chrome DevTools open">
-    </section>
-
-    <section id="analysis">
-      <div class="section-heading">
-        <span>02</span>
-        <h2>Analysis</h2>
-      </div>
-
-      <div class="grid-col-2">
-
-        <div class="code-panel">
-          <h3>DOM Structure</h3>
-
-          <pre id="analysis--simplified-html">body.body.mineshaft
+      <div>
+        <pre id="analysis--simplified-html">body.body.mineshaft
   img#enableRecite
 
   div#js-content
@@ -151,70 +131,72 @@
                       li
 
           &lt;!-- More listing items --&gt;</pre>
-        </div>
-
-        <div class="text-panel" id="analysis--text">
-          <h3>Observations</h3>
-
-          <p>
-            The body has two classes, body and mineshaft.
-            Most of the website's content is inside div#js-content.
-            I noticed that many elements have several classes
-            instead of just one.
-          </p>
-
-          <p>
-            The navigation uses div.nav-bar and contains links,
-            a logo, and buttons. I noticed classes like fixed
-            and flex, which seem to control its position and layout.
-          </p>
-
-          <p>
-            The Nice Feed uses a repeating structure called
-            feed-preview__slide. Each slide is an anchor element
-            containing an image, a title, a source, and a time.
-            I think this makes it easier to organize different
-            articles using the same structure.
-          </p>
-
-          <p>
-            Another interesting part is listing-item. It contains
-            a large image, a title, and a description.
-            The title and description are placed in separate
-            columns. Classes such as col-12 and md-col-10-6
-            seem to help control the layout on different
-            screen sizes.
-          </p>
-
-          <p>
-            I also noticed that the website uses different
-            typography styles and purple category tags
-            to create a consistent visual design.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="questions">
-      <div class="section-heading">
-        <span>03</span>
-        <h2>Questions</h2>
       </div>
 
-      <ol>
-        <li>Why does one HTML element have so many classes, like nav-bar fixed z6 flex?</li>
-        <li>Why does the website use an anchor element instead of a div for each feed-preview__slide?</li>
-        <li>What do classes like col-12 and md-col-10-6 mean, and how do they affect the layout?</li>
-      </ol>
-    </section>
+      <div id="analysis--text">
 
-    <footer>
-      <span>Core 1 Interaction: Lab / 2026</span>
-      <a href="#top">Back to top ↑</a>
-    </footer>
+        <p>
+          The body has two classes, body and mineshaft.
+          Most of the website's content is inside div#js-content.
+          I also noticed that many elements have several classes
+          instead of just one.
+        </p>
 
-  </div>
+        <p>
+          The navigation uses div.nav-bar and contains links,
+          a logo, and buttons. I noticed classes like fixed
+          and flex, which seem to control its position and layout.
+        </p>
+
+        <p>
+          The Nice Feed uses a repeating structure called
+          feed-preview__slide. Each slide is an anchor element
+          containing an image, a title, a source, and a time.
+          I think this makes it easier to organize many
+          different articles using the same structure.
+        </p>
+
+        <p>
+          Another interesting part is listing-item.
+          It contains a large image, a title, and a description.
+          The title and description are placed in separate columns.
+          I noticed classes such as col-12 and md-col-10-6,
+          which may help control the layout on different screen sizes.
+        </p>
+
+        <p>
+          I also noticed that the website uses different typography
+          styles and purple category tags to create a consistent
+          visual design.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr>
+
+  <section id="questions">
+    <h2>Questions</h2>
+
+    <ul>
+      <li>
+        Why does one HTML element have so many classes,
+        like nav-bar fixed z6 flex?
+      </li>
+      <li>
+        Why does the website use an anchor element instead
+        of a div for each feed-preview__slide?
+      </li>
+      <li>
+        What do classes like col-12 and md-col-10-6 mean,
+        and how do they affect the layout?
+      </li>
+    </ul>
+  </section>
 
 </body>
 </html>
+
