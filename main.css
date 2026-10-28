@@ -110,3 +110,8 @@ h2 {
     gap: 30px;
   }
 }
+
+.entry a:hover {
+  color: hotpink;
+  transform: translateX(20px);
+}
