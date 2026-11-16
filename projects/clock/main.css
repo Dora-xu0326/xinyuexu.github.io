@@ -1,0 +1,148 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.clock {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 5%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.found {
+  display: block;
+  color: white;
+  font-size: 180px;
+}
+
+.time {
+  display: block;
+  color: orangered;
+  font-size: 220px;
+  letter-spacing: 19px;
+}
+
+
+.numbers {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+.number-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.numbers img {
+  display: block;
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+}
+
+
+
+.seconds {
+  position: relative;
+  z-index: 1;
+  width: 35%;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.line {
+  position: absolute;
+  top: 26px;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+}
+
+
+.leaf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  margin-left: -27.5px;
+  transition: left 1s linear;
+}
+
+
+
+
+@media (max-width: 650px) {
+
+  .clock {
+    min-height: 100vh;
+    padding: 25px 20px 40px;
+  }
+
+  .found {
+    font-size: 80px;
+  }
+
+  .time {
+    font-size: 100px;
+    letter-spacing: 5px;
+  }
+
+  .numbers {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin: 30px auto;
+  }
+
+  .number-group {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .numbers img {
+    height: 260px;
+  }
+
+  .seconds {
+    width: 65%;
+  }
+
+}
