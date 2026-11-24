@@ -141,19 +141,57 @@ h2 {
   border-top: 1px solid #aaaaaa;
 }
 
+
 .pin {
-  width: 75px;
-  height: 75px;
+  position: relative;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  background-color: #e2ffdf;
+  background-color: #fff9a6;
 
   display: flex;
-  align-items: center;
   justify-content: center;
-
-  font-family: "Almendra SC", serif;
-  font-size: 16px;
+  align-items: center;
 }
+
+.pin-name {
+  font-family: "Sekuya", serif;
+  font-size: 34px;
+  color: black;
+  text-shadow: 4px 4px 3px #b4b28b;
+}
+
+.pin-star {
+  position: absolute;
+  color: #a9e5ff;
+  font-size: 24px;
+}
+
+.pin .star1 {
+  top: 30px;
+  left: 38px;
+}
+
+.pin .star2 {
+  top: 20px;
+  right: 35px;
+}
+
+.pin .star3 {
+  bottom: 40px;
+  left: 28px;
+}
+
+.pin .star4 {
+  bottom: 40px;
+  right: 30px;
+}
+
+.pin .star5 {
+  bottom: 15px;
+  left: 80px;
+}
+
 
 .footer a {
   font-family: "Sansation", sans-serif;

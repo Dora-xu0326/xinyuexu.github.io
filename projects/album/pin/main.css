@@ -1,0 +1,62 @@
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #fff9a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Sekuya", serif;
+  font-size: 75px;
+  font-weight: 400;
+  color: black;
+  text-shadow: 7px 7px 4px #b4b28b;
+  margin: 0;
+  z-index: 1;
+}
+
+.star {
+  position: absolute;
+  color: #a9e5ff;
+  font-size: 48px;
+}
+
+.star1 {
+  top: 70px;
+  left: 85px;
+}
+
+.star2 {
+  top: 40px;
+  right: 90px;
+}
+
+.star3 {
+  bottom: 85px;
+  left: 60px;
+}
+
+.star4 {
+  bottom: 85px;
+  right: 65px;
+}
+
+.star5 {
+  bottom: 35px;
+  left: 175px;
+}
